@@ -1,0 +1,23 @@
+Description
+This Python script implements a simple image classification model using a Support Vector Machine (SVM) to distinguish between cat and dog images. The script loads images from a specified directory, preprocesses them, trains an SVM model, and evaluates its performance using accuracy and other metrics.
+Key Features
+Data Loading:
+Loads images from specified folders for cats and dogs.
+Resizes images to a uniform dimension of 64x64 pixels for consistency.
+Labeling:
+Assigns labels to images: 0 for cats and 1 for dogs.
+Image Preprocessing:
+Reshapes images into 1D arrays, which is required by the SVM.
+Normalizes pixel values to the range [0, 1] to enhance model training.
+Data Splitting:
+Divides the dataset into training and testing subsets (80% training, 20% testing) using train_test_split.
+Model Training:
+Trains a linear kernel SVM model on the training data with a regularization parameter C set to 1.
+Model Prediction:
+Makes predictions on the test set using the trained SVM model.
+Model Evaluation:
+Calculates and prints the accuracy of the model.
+Displays a classification report detailing precision, recall, and F1-score.
+Outputs the confusion matrix to visualize classification performance.
+Use Cases
+This script can be utilized in applications involving animal image classification, enabling automated systems to distinguish between different animal species based on their images. It serves as a foundational model that can be expanded upon for more complex image classification tasks or integrated into larger machine learning projects
